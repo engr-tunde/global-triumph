@@ -1,0 +1,122 @@
+.about-main {
+  margin: 86px 0 0 0;
+  padding: 80px 0 0 0px;
+  background-image: url('../../img/brick.jpg');
+  position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow-y: hidden !important;
+}
+.about-main h3 {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+.about-main .img {
+  background: #e6e6e67a;
+  border-radius: 20px;
+  padding: 14px 14px 14px 0;
+  width: 45%;
+  position: absolute;
+  top: 150px;
+  left: -20px;
+  animation: dancingSlide 3s linear infinite;
+}
+.about-main img {
+  background: #fff;
+  border-radius: 20px;
+}
+.about-main .main {
+  padding: 100px 0 150px 53%;
+  overflow-y: hidden !important;
+}
+.about-main .main p {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5em;
+  letter-spacing: 0.8px;
+}
+
+@media (max-width: 500px) {
+  .about-main {
+    margin: 36px 0 0 0;
+    padding: 80px 0 0 0px;
+  }
+  .about-main h3 {
+    font-size: 25px;
+  }
+  .about-main .main {
+    padding: 30px 2% 150px 2%;
+  }
+  .about-main .main p {
+    text-align: center;
+  }
+  .about-main .img {
+    padding: 13px;
+    width: 80%;
+    top: 550px;
+    left: 10px;
+  }
+}
+
+@media (min-width: 501px) AND (max-width: 991px) {
+  .about-main {
+    margin: 55px 0 0 0;
+    padding: 80px 0 0 0px;
+  }
+  .about-main h3 {
+    font-size: 25px;
+  }
+  .about-main .main {
+    padding: 30px 2% 150px 2%;
+  }
+  .about-main .main p {
+    text-align: center;
+  }
+  .about-main .img {
+    padding: 13px;
+    width: 80%;
+    top: 500px;
+    left: 10px;
+  }
+}
+
+@media (min-width: 992px) AND (max-width: 1199px) {
+  .about-main {
+    margin: 73px 0 0 0;
+  }
+  .about-main h3 {
+    font-size: 29px;
+  }
+  .about-main .img {
+    padding: 14px 14px 14px 0;
+    width: 55%;
+    top: 150px;
+    left: -20px;
+    animation: dancingSlide 3s linear infinite;
+  }
+  .about-main .main {
+    padding: 100px 0 100px 58%;
+  }
+}
+
+@media (min-width: 1200px) AND (max-width: 1400px) {
+  .about-main {
+    margin: 75px 0 0 0;
+  }
+  .about-main h3 {
+    font-size: 29px;
+  }
+  .about-main .img {
+    padding: 14px 14px 14px 0;
+    width: 58%;
+    top: 160px;
+    left: -20px;
+    animation: dancingSlide 3s linear infinite;
+  }
+  .about-main .main {
+    padding: 100px 0 80px 60%;
+  }
+}

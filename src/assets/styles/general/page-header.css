@@ -1,0 +1,124 @@
+/* Contact page styles */
+
+.page-header {
+    margin-top: 86px;
+    padding: 40px;
+    background: #deec83;
+    position: relative;
+}
+.page-header-container {
+    padding: 29px 0;
+    width: 50% !important;
+    margin: 20px auto;
+}
+.page-header-container p {
+    color: #0000009F;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0;
+    text-align: center;
+}
+.page-header-container h3 {
+    color: #001F0E;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 10px 0;
+    text-align: center;
+}
+.page-header img{
+    width: 22% !important;
+    position: absolute;
+    right: 9%;
+    top: 10%;
+    z-index: 9999;
+    animation: updown 3s linear infinite;
+}
+
+
+
+@media (max-width:500px) {
+    .page-header {
+        margin-top: 36px;
+    }
+    .page-header-container {
+        padding: 50px 0;
+        width: 100% !important;
+        margin: 0px auto;
+    }
+    .page-header-container p {
+        font-size: 14px;
+        line-height: 1.4em;
+    } 
+    .page-header-container h3 {
+        font-size: 23px;
+    }
+    .page-header img{
+        width: 40% !important;
+        right: 5%;
+        top: 72%
+    }
+}
+
+
+@media (min-width:501px) AND (max-width:991px) {
+    .page-header {
+        margin-top: 55px;
+    }
+    .page-header-container {
+        width: 80% !important;
+    }
+    .page-header-container p {
+        font-size: 14px;
+        line-height: 1.5em;
+    }
+    .page-header-container h3 {
+        font-size: 22px;
+        padding: 5px 0 20px 0;
+    }
+    .page-header img{
+        width: 33% !important;
+        right: 5%;
+        top: 65%
+    }
+}
+
+
+@media (min-width:992px) AND (max-width:1199px) {
+    .page-header {
+        margin-top: 73px;
+    }
+    .page-header-container {
+        width: 60% !important;
+    }
+    .page-header-container p {
+        font-size: 15px;
+        line-height: 1.5em;
+    }
+    .page-header-container h3 {
+        font-size: 22px;
+    }
+    .page-header img{
+        width: 25% !important;
+        right: 3%;
+        top: 50%
+    }
+}
+
+
+@media (min-width:1200px) AND (max-width:1400px) {
+    .page-header {
+        margin-top: 75px;
+    }
+    .page-header-container {
+        width: 55% !important;
+    }
+    .page-header-container p {
+        padding: 0 0 10px 0;
+        line-height: 1.5em;
+    }
+    .page-header img{
+        width: 26% !important;
+        right: 5%;
+        top: 57%
+    }
+}

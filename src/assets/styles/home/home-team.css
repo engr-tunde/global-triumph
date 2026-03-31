@@ -1,0 +1,219 @@
+/* Team */
+.home-team {
+  margin-top: -100px;
+  padding: 50px 0 60px 0;
+}
+.team-bx {
+  z-index: 90000 !important;
+  background: #fff;
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: -0px;
+  box-shadow: 1px 5px 12px 5px #000c0246 !important;
+}
+.home-team h3 {
+  color: #000;
+  font-size: 30px;
+  font-weight: 700;
+}
+.home-team p {
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin-bottom: 14px;
+}
+.home-team .team-slider {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+.home-team .team-slider .item {
+  padding: 30px;
+  margin: 0 10px;
+  height: 300px;
+}
+.home-team .team-slider img {
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  margin: 0 auto 15px auto;
+  box-shadow: 1px 5px 8px 5px #000c0246 !important;
+}
+.home-team .team-slider h4 {
+  color: #000;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin-bottom: 3px;
+}
+.home-team .team-slider p {
+  color: #000;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+.bt {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 0px !important;
+}
+.home-team .button {
+  text-align: center;
+  color: #000 !important;
+  font-weight: 600;
+  font-size: 19px;
+  margin-top: 0px;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+}
+.home-team .button svg {
+  font-size: 25px;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+  line-height: 1;
+}
+.home-team .button:hover svg {
+  margin-left: 25px;
+}
+
+@media (max-width: 500px) {
+  .home-team {
+    margin-top: -140px;
+    padding: 100px 0 60px 0;
+    position: relative;
+  }
+  .team-bx {
+    border-radius: 40px;
+    padding: 60px 20px;
+    box-shadow: 1px 5px 12px 5px #000c0257 !important;
+  }
+  .home-team h3 {
+    font-size: 24px;
+  }
+  .home-team .team-slider .item {
+    padding: 20px;
+    margin: 0 10px;
+    height: 300px;
+  }
+  .home-team .team-slider img {
+    width: 70%;
+    height: 70%;
+    box-shadow: 1px 5px 4px 7px #000c0246 !important;
+  }
+  .home-team .team-slider h4 {
+    margin: 5px 0 3px 0;
+  }
+  .home-team .button {
+    font-weight: 600;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 501px) AND (max-width: 991px) {
+  .home-team {
+    margin-top: -140px;
+    padding: 100px 0 60px 0;
+    position: relative;
+  }
+  .team-bx {
+    border-radius: 40px;
+    padding: 60px 20px;
+    box-shadow: 1px 5px 12px 5px #000c0257 !important;
+  }
+  .home-team h3 {
+    font-size: 24px;
+  }
+  .home-team .team-slider .item {
+    padding: 20px;
+    margin: 0 10px;
+    height: 300px;
+  }
+  .home-team .team-slider img {
+    width: 60%;
+    height: 70%;
+    box-shadow: 1px 5px 4px 7px #000c0246 !important;
+  }
+  .home-team .team-slider h4 {
+    margin: 5px 0 3px 0;
+  }
+  .home-team .button {
+    font-weight: 600;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 992px) AND (max-width: 1199px) {
+  .home-team {
+    margin-top: -140px;
+    padding: 100px 0 60px 0;
+    position: relative;
+  }
+  .team-bx {
+    padding: 60px 30px;
+    margin-top: -60px;
+  }
+  .home-team h3 {
+    font-size: 25px;
+  }
+  .home-team .team-slider {
+    width: 90%;
+  }
+  .home-team .team-slider .item {
+    padding: 20px;
+    margin: 0 10px;
+    height: 280px;
+  }
+  .home-team .team-slider img {
+    width: 75%;
+    height: 65%;
+  }
+  .home-team .team-slider h4 {
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+  .home-team .button {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1200px) AND (max-width: 1400px) {
+  .home-team {
+    margin-top: -140px;
+    padding: 100px 0 60px 0;
+    position: relative;
+  }
+  .team-bx {
+    border-radius: 55px;
+    padding: 60px 50px;
+  }
+  .home-team h3 {
+    font-size: 26px;
+  }
+  .home-team .team-slider {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .home-team .team-slider .item {
+    padding: 20px;
+    margin: 0 10px;
+    height: 300px;
+  }
+  .home-team .team-slider img {
+    width: 75%;
+    height: 60%;
+  }
+  .home-team .button {
+    font-weight: 600;
+    font-size: 16px;
+  }
+}

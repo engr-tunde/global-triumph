@@ -1,0 +1,451 @@
+.listings-body {
+    background-image: url('../../img/white-bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 90px 0;
+    margin-top: 86px;
+}
+
+.listings-body .store-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto;
+    width: 90%;
+}
+.listings-body .title {
+    color: #000;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.listings-body .subtitle {
+    color: #000;
+    background: #fff;
+    font-size: 15px;
+    text-align: center;
+    padding: 40px 50px;
+    box-shadow: 5px 5px 3px 5px #D8D9DE;
+    max-width: 95%;
+    margin: 30px auto;
+    line-height: 1.5em; 
+}
+
+.listings-body .list-wrapper {
+    width: 100%;
+    margin: 20px auto;
+    padding: 0;
+}
+.listings-body .list-card {
+    background: #fff;
+    padding: 15px;
+    box-shadow: 5px 5px 3px 5px #D8D9DE;
+    border: 1px solid #26683C;
+    border-radius: 10px;
+    margin: 22px auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.listings-body .list-card img {
+    height: 130px !important
+}
+.listings-body .list-card h3 {
+    color: #26683C;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5em; 
+    padding: 0;
+    margin: 0;
+}
+.listings-body .list-card p {
+    color: #000;
+    font-size: 15px;
+    line-height: 1.5em; 
+}
+.listings-body .list-card .left {
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.listings-body .list-card .center {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.listings-body .list-card .center span {
+    color: #000;
+    font-size: 13px;
+}
+.listings-body .list-card .center p {
+    color: #121212b9;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.2em;
+    padding-top: 0px;
+    margin: 0;
+}
+.listings-body .list-card .center ul {
+    padding: 5px 0;
+    margin: 0;
+}
+.listings-body .list-card .center li {
+    list-style: none;
+    color: #121212b9;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.2em;
+    padding: 0;
+    margin: 0;
+}
+.listings-body .list-card .right {
+    width: 24%;
+    text-align: left;
+    border-left: 1px solid #d8d9de79;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.listings-body .list-card .right p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #26683C;
+    padding-bottom: 5px;
+    margin: 0;
+}
+.listings-body .list-card .right a {
+    font-size: 13px;
+    font-weight: 500;
+    width: 88%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listings-body .list-card .right a.details {
+    background: #00BFA6;
+    color: #fff;
+    height: 37px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.listings-body .list-card .right a.contact {
+    background: #fff;
+    color: #26683C;
+    border: 1px solid #26683C !important;
+    height: 35px;
+}
+
+
+
+.listings-body .overview {
+    color: #000;
+    background: #fff;
+    text-align: center;
+    padding: 0;
+    box-shadow: 5px 5px 3px 5px #D8D9DE;
+    max-width: 90%;
+    margin: 20px auto;
+}
+.listings-body .overview h3 {
+    background: #068d7b;
+    color: #fff;
+    font-size: 17px;
+    text-align: left;
+    padding: 15px;
+    margin: 0;
+}
+.listings-body .overview p {
+    color: #26683C;
+    text-align: left;
+    padding: 15px;
+    margin: 0;
+    border-bottom: 1px solid #26683C;
+}
+.listings-body .overview a {
+    color: #26683C;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+
+@media (max-width:500px) {
+    .listings-body {
+        padding: 85px 0 100px 0;
+        margin-top: 36px;
+    }
+    .listings-body .store-wrapper {
+        margin: 0px auto;
+        width: 100%;
+    }
+    .listings-body .title {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+    .listings-body .subtitle {
+        padding: 30px 20px;
+        max-width: 90%;
+        margin: 10px auto;
+    }
+    .listings-body .list-wrapper {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .listings-body .list-card {
+        padding: 15px;
+        margin: 25px auto;
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .listings-body .list-card h3 {
+        font-size: 15px;
+        line-height: 1.4em; 
+        padding: 10px 0 0 0;
+    }
+    .listings-body .list-card p {
+        line-height: 1.5em; 
+    }
+
+    .listings-body .list-card .left {
+        width: 100%;
+    }
+    .listings-body .list-card .center {
+        width: 100%;
+    }
+    .listings-body .list-card .center p {
+        font-size: 0px;
+    }
+    .listings-body .list-card .center ul {
+        padding: 10px 0;
+    }
+    .listings-body .list-card .center li {
+        line-height: 1.5em;
+    }
+    
+    .listings-body .list-card .right {
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid #d8d9de79;
+        border-left: 0;
+        padding: 10px;
+    }
+    .listings-body .list-card .right p {
+        font-size: 16px;
+        padding: 2px 0;
+        margin: 0;
+    }
+    .listings-body .list-card .right a {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .listings-body .overview {
+        max-width: 100%;
+        margin: 20px auto;
+    }
+    .listings-body .overview h3 {
+        font-size: 17px;
+        text-align: center;
+        padding: 15px;
+        margin: 0;
+    }
+    .listings-body .overview p {
+        color: #26683C;
+        text-align: center;
+        padding: 15px;
+        margin: 0;
+        border-bottom: 1px solid #26683C;
+    }
+    .listings-body .overview a {
+        color: #26683C;
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
+
+@media (min-width:501px) AND (max-width:991px) {
+    .listings-body {
+        padding: 85px 0 100px 0;
+        margin-top: 55px;
+    }
+    .listings-body .store-wrapper {
+        margin: 0px auto;
+        width: 90%;
+    }
+    .listings-body .title {
+        font-size: 20px;
+    }
+    .listings-body .subtitle {
+        padding: 30px 20px;
+        max-width: 100%;
+        margin: 30px auto;
+    }
+    .listings-body .list-wrapper {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .listings-body .list-card {
+        padding: 15px;
+        box-shadow: 5px 5px 3px 5px #D8D9DE;
+        margin: 10px auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .listings-body .list-card h3 {
+        font-size: 15px;
+        line-height: 1.4em; 
+        padding: 10px 0 0 0;
+    }
+    .listings-body .list-card p {
+        line-height: 1.5em; 
+    }
+
+    .listings-body .list-card .left {
+        width: 100%;
+    }
+    .listings-body .list-card .center {
+        width: 100%;
+    }
+    .listings-body .list-card .center p {
+        font-size: 0px;
+    }
+    .listings-body .list-card .center ul {
+        padding: 10px 0;
+    }
+    .listings-body .list-card .center li {
+        line-height: 1.5em;
+    }
+    
+    .listings-body .list-card .right {
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid #d8d9de79;
+        border-left: 0;
+        padding: 10px;
+    }
+    .listings-body .list-card .right p {
+        font-size: 16px;
+        padding: 2px 0;
+        margin: 0;
+    }
+    .listings-body .list-card .right a {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (min-width:992px) AND (max-width:1199px) {
+    .listings-body {
+        padding: 90px 0;
+        margin-top: 73px;
+    }
+    .listings-body .subtitle {
+        padding: 25px 30px;
+        max-width: 100%;
+        margin: 25px auto;
+    }
+    .listings-body .store-wrapper {
+        width: 100%;
+    }
+    .listings-body .list-wrapper {
+        width: 100%;
+        margin: 20px auto;
+    }
+    
+    .listings-body .list-card {
+        padding: 15px;
+        width: 100%;
+    }
+    .listings-body .list-card h3 {
+        font-size: 15px;
+        line-height: 1.4em;
+    }
+    .listings-body .list-card p {
+        line-height: 1.5em; 
+    }
+    .listings-body .list-card .center ul {
+        padding: 7px 0;
+    }
+    .listings-body .list-card .right p {
+        font-size: 15px;
+    }
+    .listings-body .list-card .right a {
+        font-size: 13px;
+        width: 100%;
+    }
+    .listings-body .list-card .right a.details {
+        height: 33px;
+    }
+    .listings-body .list-card .right a.contact {
+        height: 31px;
+    }
+    .listings-body .overview {
+        max-width: 100%;
+    }
+}
+
+@media (min-width:1200px) AND (max-width:1400px) {
+    .listings-body {
+        padding: 90px 0;
+        margin-top: 75px;
+    }
+    .listings-body .subtitle {
+        padding: 25px 30px;
+        max-width: 90%;
+        margin: 25px auto;
+    }
+    .listings-body .store-wrapper {
+        width: 100%;
+    }
+    .listings-body .list-wrapper {
+        width: 90%;
+        margin: 20px auto;
+    }
+    
+    .listings-body .list-card {
+        padding: 15px;
+        width: 100%;
+    }
+    .listings-body .list-card h3 {
+        font-size: 15px;
+        line-height: 1.4em;
+    }
+    .listings-body .list-card p {
+        line-height: 1.5em; 
+    }
+    .listings-body .list-card .center ul {
+        padding: 7px 0;
+    }
+    .listings-body .list-card .right p {
+        font-size: 15px;
+    }
+    .listings-body .list-card .right a {
+        font-size: 13px;
+        width: 100%;
+    }
+    .listings-body .list-card .right a.details {
+        height: 33px;
+    }
+    .listings-body .list-card .right a.contact {
+        height: 31px;
+    }
+    .listings-body .overview {
+        max-width: 100%;
+    }
+}

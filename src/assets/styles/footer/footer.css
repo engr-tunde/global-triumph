@@ -1,0 +1,149 @@
+/* Footer styles */
+
+.footer {
+    margin: 0;
+    padding: 40px 0px 30px 0px;
+    background-image: url('../../img/brick.jpg');
+    position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer h3 {
+    font-size: 19px;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+.footer a{
+    display: block;
+    padding-bottom: 15px;
+    color: #fff;
+    opacity: 1;
+    font-size: 13px;
+}
+
+.footer a:hover {
+    color: #fff;
+    opacity: 0.6;
+}
+
+.footer .footer-line {
+    height: 2px;
+    width: 80%;
+    background: #ffffff;
+    opacity: 0.2;
+    margin: 10px auto;
+}
+
+.footer .company-name {
+    font-size: 19px;
+    font-weight: 500;
+    padding: 0;
+    letter-spacing: 8px;
+}
+
+.footer .company-name img {
+    width: 8%;
+}
+
+ .footer .social-icon {
+    display: inline-block;
+    width: 100%;
+    margin-left: 7px;
+    margin-right: 7px;
+    text-align: center;
+}
+.footer .social-icon a {
+    width: 42px;
+    height: 42px;
+    background: rgba(217, 217, 217, 0.1);
+    display: inline-flex;
+    border-radius: 50%;
+    margin-right: 6px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    line-height: 1;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.footer .social-icon a::before {
+    content: "";
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.3s ease-in-out;
+}
+.footer .social-icon a:hover::before {
+    transform: scale(1);
+}
+.footer .social-icon a img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    width: 40%;
+    z-index: 1;
+    transition: 0.3s ease-in-out;
+}
+.footer .social-icon a:hover img {
+    filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+} 
+
+@media (max-width:550px) {
+    .footer .company-name img {
+        width: 25% !important;
+    }
+    .link-header {
+        padding-top: 10px;
+    }
+}
+
+@media (min-width:551px) AND (max-width:700px) {
+    .footer .company-name img {
+        width: 20% !important;
+    }
+    .link-header {
+        padding-top: 10px;
+    }
+}
+
+@media (min-width:701px) AND (max-width:999px) {
+    .footer .company-name img {
+        width: 15% !important;
+    }
+    .link-header {
+        padding-top: 10px;
+    }
+}
+
+
+
+@media (max-width:1000px) {
+    .footer {
+        padding: 50px 20px 20px 20px;
+    }
+
+    .footer .company-name img {
+        width: 25%;
+    }
+
+    .footer .footer-line {
+        height: 2px;
+        width: 100%;
+        background: #ffffff;
+        opacity: 0.2;
+    }
+    
+}
+
+@media (min-width:1001px) {
+    .footer {
+        padding: 30px 30px 20px 20px;
+    }
+
+}

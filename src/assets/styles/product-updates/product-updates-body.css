@@ -1,0 +1,48 @@
+.product-updates {
+    background-image: url('../../img/white-bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 90px 0;
+}
+.product-updates .body {
+    width: 60%;
+    margin-left: 10%;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #26683C;
+    box-shadow: 5px 4px 3px 5px #d1d1d1;
+}
+.product-updates .body p {
+    color: #121212;
+    font-size: 17px;
+    line-height: 1.7em;
+}
+
+@media (max-width:500px) {
+    .product-updates .body {
+        box-sizing: border-box;
+        width: 90%;
+        margin-left: 0;
+        margin-right: 10%;
+    }
+    .product-updates .body p {
+        font-size: 15px;
+        line-height: 1.7em;
+    }
+}
+
+@media (min-width:501px) AND (max-width:991px) {
+    .product-updates .body {
+        box-sizing: border-box;
+        width: 80%;
+        margin-left: 5%;
+        margin-right: 10%;
+    }
+    .product-updates .body p {
+        font-size: 15px;
+        line-height: 1.7em;
+    }
+}

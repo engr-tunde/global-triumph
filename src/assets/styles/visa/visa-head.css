@@ -1,0 +1,89 @@
+.visa-head {
+    padding: 140px 0 0px 0 !important;
+    margin: 0 !important;
+}
+
+.visa-head .title {
+    color: #121212;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.visa-head .subtitle {
+    font-weight: 400 !important;
+    color: #000;
+    background: #ECFAF8;
+    font-size: 15px;
+    text-align: left;
+    padding: 40px 50px;
+    box-shadow: 5px 5px 3px 5px #D8D9DE;
+    max-width: 70%;
+    margin: 20px auto;
+    line-height: 1.5em; 
+    border-radius: 20px;
+    border: 1px solid #001F0E;
+}
+
+.visa-head .subtitle span:nth-child(1), .visa-head .subtitle span:nth-child(3) {
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 3px;
+    font-weight: 600 !important;
+}
+
+.visa-head .subtitle .requirements {
+    display: flex;
+    justify-content: space-between;
+}
+
+.visa-head .subtitle .requirements div {
+    border: 1px dashed #121212;
+    padding: 20px;
+    border-radius: 20px;
+    width: 47%;
+}
+
+.visa-head .subtitle .requirements div p {
+    font-weight: 600;
+}
+
+@media (max-width:500px) {
+    .visa-head .title {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+    .visa-head .subtitle {
+        padding: 30px 15px;
+        max-width: 90%;
+        margin: 10px auto;
+    }
+    .visa-head .subtitle span:nth-child(1), .visa-head .subtitle span:nth-child(3) {
+        text-align: center;
+    }
+    .visa-head .subtitle .requirements {
+        padding-top: 10px;
+    }
+    .visa-head .subtitle .requirements div {
+        border: 1px dashed #121212;
+        padding: 10px 8px;
+        border-radius: 15px;
+        width: 49%;
+    }
+}
+
+@media (min-width:501px) AND (max-width:991px) {
+    .visa-head .subtitle {
+        padding: 30px 30px;
+        max-width: 100%;
+        margin: 10px auto;
+    }
+}
+
+
+@media (min-width:992px) AND (max-width:1199px) {
+    .visa-head .subtitle {
+        padding: 30px 30px;
+        margin: 10px auto;
+    }
+}

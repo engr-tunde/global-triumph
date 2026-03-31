@@ -1,0 +1,78 @@
+.investment-header {
+    background-image: url('../../img/white-bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 90px 0;
+}
+.investment-top-header {
+    margin-top: 86px !important;
+}
+.investment-header .bx {
+    background: #ffffff9f;
+    width: 60%;
+    padding: 20px;
+    margin: 0 auto;
+    border: 1px solid #26683C;
+    border-radius: 15px;
+    box-shadow: 5px 6px 3px 6px #D8D9DE;
+}
+.investment-header h3 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.investment-header .bx p {
+    color: #000;
+    font-size: 14px;
+    line-height: 1.6em;
+}
+.investment-header .bx .span {
+    color: #26683C !important;
+    font-weight: 500;
+}
+
+@media (max-width:500px) {
+    .investment-top-header {
+        margin-top: 36px !important;
+    }
+    .investment-header .bx {
+        width: 90%;
+        padding: 35px 10px;
+    }
+    .investment-header .bx h3{
+        padding-bottom: 10px;
+    }
+    .investment-header .bx p{
+        text-align: center;
+    }
+}
+
+@media (min-width:501px) AND (max-width:991px) {
+    .investment-top-header {
+        margin-top: 55px !important;
+    }
+    .investment-header .bx {
+        width: 85%;
+        padding: 35px 10px;
+    }
+    .investment-header .bx h3{
+        padding-bottom: 10px;
+    }
+    .investment-header .bx p{
+        text-align: center;
+    }
+}
+
+@media (min-width:992px) AND (max-width:1199px) {
+    .investment-top-header {
+        margin-top: 73px !important;
+    }
+    .investment-header .bx {
+        width: 75%;
+        padding: 35px 10px;
+    }
+}
