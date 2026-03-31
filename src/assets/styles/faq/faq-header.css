@@ -1,168 +1,70 @@
-/* Contact page styles */
-
-.faq-header {
-    margin-top: 86px;
-    padding: 40px;
-    background: #deec83;
-    position: relative;
+.faq-hero {
+  margin-top: var(--gt-header-h, 86px);
+  padding: clamp(2.25rem, 4vw, 3.25rem) 0;
+  background:
+    radial-gradient(ellipse 70% 60% at 100% 0%, rgba(143, 227, 176, 0.28) 0%, transparent 55%),
+    linear-gradient(180deg, #ffffff 0%, var(--gt-surface) 100%);
+  border-bottom: 1px solid var(--gt-line);
 }
 
-.faq-header-container {
-    padding: 29px 0;
-    width: 50% !important;
-    margin: 20px auto;
+.faq-hero__eyebrow {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gt-ink-soft);
+  margin: 0 0 0.65rem;
 }
 
-.faq-header-container p {
-    color: #0000009F;
-    font-size: 15px;
-    font-weight: 500;
-    padding: 0 0 10px 0;
+.faq-hero__slash {
+  padding: 0 0.35rem;
+  color: var(--gt-green);
 }
 
-.faq-header-container p span {
-    padding-left: 30px;
+.faq-hero__title {
+  font-size: clamp(1.65rem, 3vw, 2.2rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--gt-ink);
+  margin: 0 0 0.75rem;
 }
 
-.faq-header-container h3 {
-    color: #001F0E;
-    font-size: 24px;
-    font-weight: 600;
-    padding: 10px 0 20px 0;
+.faq-hero__lead {
+  font-size: 1.02rem;
+  line-height: 1.65;
+  color: var(--gt-ink-soft);
+  margin: 0;
+  max-width: 36rem;
 }
 
-.faq-header img{
-    width: 20% !important;
-    position: absolute;
-    right: 15%;
-    top: 60%
+.faq-hero__img {
+  width: min(220px, 55%);
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  filter: drop-shadow(0 20px 40px rgba(8, 32, 18, 0.12));
 }
 
-.faq-header .faq-form {
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    margin-top: 10px;
+@media (max-width: 500px) {
+  .faq-hero {
+    margin-top: 36px;
+  }
 }
 
-.faq-header .faq-form input {
-    width: 75%;
-    margin: 0;
-    background: #a3d51a !important;
-    border: 0;
-    border-radius: 30px;
-    padding: 12px 15px !important;
+@media (min-width: 501px) and (max-width: 991px) {
+  .faq-hero {
+    margin-top: 55px;
+  }
 }
 
-.faq-header .faq-form button {
-    width: 18%;
-    background: #26683C;
-    font-size: 15px;
-    border: 0;
-    color: #fff;
-    font-weight: 500;
-    border-radius: 30px;
+@media (min-width: 992px) and (max-width: 1199px) {
+  .faq-hero {
+    margin-top: 73px;
+  }
 }
 
-
-
-@media (max-width:500px) {
-    .faq-header {
-        margin-top: 36px;
-    }
-    .faq-header-container {
-        padding: 50px 0;
-        width: 100% !important;
-        margin: 0px auto;
-    }
-    .faq-header-container p {
-        font-size: 14px;
-        line-height: 1.4em;
-    } 
-    .faq-header-container h3 {
-        font-size: 23px;
-    }
-    .faq-header img{
-        width: 50% !important;
-        right: 0;
-        top: 86%;
-    }
-    .faq-header .faq-form input {
-        width: 72%;
-    }
-    .faq-header .faq-form button {
-        width: 24%;
-        border-radius: 30px;
-        font-size: 13px;
-    }
-}
-
-
-@media (min-width:501px) AND (max-width:991px) {
-    .faq-header {
-        margin-top: 55px;
-    }
-    .faq-header-container {
-        width: 80% !important;
-    }
-    .faq-header-container p {
-        font-size: 14px;
-        line-height: 1.5em;
-    }
-    .faq-header-container h3 {
-        font-size: 22px;
-        padding: 5px 0 20px 0;
-    }
-    .faq-header img{
-        width: 38% !important;
-        position: absolute;
-        right: 0;
-        top: 75%
-    }
-    .faq-header .faq-form button {
-        width: 18%;
-        font-size: 14px;
-        border-radius: 25px;
-    }
-}
-
-
-@media (min-width:992px) AND (max-width:1199px) {
-    .faq-header {
-        margin-top: 73px;
-    }
-    .faq-header-container {
-        width: 60% !important;
-    }
-    .faq-header-container p {
-        font-size: 15px;
-        line-height: 1.5em;
-    }
-    .faq-header-container h3 {
-        font-size: 22px;
-    }
-    .faq-header img{
-        width: 27% !important;
-        right: 1%;
-        top: 70%
-    }
-}
-
-
-@media (min-width:1200px) AND (max-width:1400px) {
-    .faq-header {
-        margin-top: 75px;
-    }
-    .faq-header-container {
-        width: 55% !important;
-    }
-    .faq-header-container p {
-        padding: 0 0 10px 0;
-        line-height: 1.5em;
-    }
-    .faq-header img{
-        width: 20% !important;
-        right: 5%;
-        top: 77%
-    }
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .faq-hero {
+    margin-top: 75px;
+  }
 }

@@ -1,122 +1,95 @@
 .about-main {
-  margin: 86px 0 0 0;
-  padding: 80px 0 0 0px;
-  background-image: url('../../img/brick.jpg');
-  position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  overflow-y: hidden !important;
+  margin-top: var(--gt-header-h, 86px);
+  padding: clamp(2.5rem, 5vw, 4rem) 0 clamp(3rem, 6vw, 4.5rem);
+  background:
+    radial-gradient(ellipse 80% 50% at 0% 0%, rgba(143, 227, 176, 0.2) 0%, transparent 55%),
+    linear-gradient(180deg, #ffffff 0%, var(--gt-surface) 100%);
 }
-.about-main h3 {
-  font-size: 30px;
-  font-weight: 600;
+
+.about-main__header {
   text-align: center;
+  max-width: 640px;
+  margin: 0 auto 2.5rem;
 }
-.about-main .img {
-  background: #e6e6e67a;
-  border-radius: 20px;
-  padding: 14px 14px 14px 0;
-  width: 45%;
+
+.about-main__eyebrow {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gt-green);
+  margin: 0 0 0.5rem;
+}
+
+.about-main__title {
+  font-size: clamp(1.65rem, 3vw, 2.2rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--gt-ink);
+  margin: 0;
+}
+
+.about-main__copy p {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--gt-ink-soft);
+  margin: 0 0 1rem;
+}
+
+.about-main__copy p:last-child {
+  margin-bottom: 0;
+}
+
+.about-main__visual {
+  position: relative;
+  padding: 2px;
+  border-radius: calc(var(--gt-radius-lg, 20px) + 4px);
+  background: linear-gradient(135deg, rgba(212, 175, 105, 0.45) 0%, rgba(45, 107, 71, 0.35) 50%, rgba(174, 245, 197, 0.4) 100%);
+  box-shadow: var(--gt-shadow);
+}
+
+.about-main__visual-frame {
+  position: relative;
+  border-radius: var(--gt-radius-lg);
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  background: #061208;
+}
+
+.about-main__visual-frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about-main__visual-accent {
   position: absolute;
-  top: 150px;
-  left: -20px;
-  animation: dancingSlide 3s linear infinite;
-}
-.about-main img {
-  background: #fff;
-  border-radius: 20px;
-}
-.about-main .main {
-  padding: 100px 0 150px 53%;
-  overflow-y: hidden !important;
-}
-.about-main .main p {
-  color: #fff;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 1.5em;
-  letter-spacing: 0.8px;
+  bottom: -12px;
+  right: 12%;
+  width: 48%;
+  height: 28%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(174, 245, 197, 0.35) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: -1;
 }
 
 @media (max-width: 500px) {
   .about-main {
-    margin: 36px 0 0 0;
-    padding: 80px 0 0 0px;
-  }
-  .about-main h3 {
-    font-size: 25px;
-  }
-  .about-main .main {
-    padding: 30px 2% 150px 2%;
-  }
-  .about-main .main p {
-    text-align: center;
-  }
-  .about-main .img {
-    padding: 13px;
-    width: 80%;
-    top: 550px;
-    left: 10px;
+    margin-top: 36px;
   }
 }
 
-@media (min-width: 501px) AND (max-width: 991px) {
+@media (min-width: 501px) and (max-width: 991px) {
   .about-main {
-    margin: 55px 0 0 0;
-    padding: 80px 0 0 0px;
-  }
-  .about-main h3 {
-    font-size: 25px;
-  }
-  .about-main .main {
-    padding: 30px 2% 150px 2%;
-  }
-  .about-main .main p {
-    text-align: center;
-  }
-  .about-main .img {
-    padding: 13px;
-    width: 80%;
-    top: 500px;
-    left: 10px;
+    margin-top: 55px;
   }
 }
 
-@media (min-width: 992px) AND (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .about-main {
-    margin: 73px 0 0 0;
-  }
-  .about-main h3 {
-    font-size: 29px;
-  }
-  .about-main .img {
-    padding: 14px 14px 14px 0;
-    width: 55%;
-    top: 150px;
-    left: -20px;
-    animation: dancingSlide 3s linear infinite;
-  }
-  .about-main .main {
-    padding: 100px 0 100px 58%;
-  }
-}
-
-@media (min-width: 1200px) AND (max-width: 1400px) {
-  .about-main {
-    margin: 75px 0 0 0;
-  }
-  .about-main h3 {
-    font-size: 29px;
-  }
-  .about-main .img {
-    padding: 14px 14px 14px 0;
-    width: 58%;
-    top: 160px;
-    left: -20px;
-    animation: dancingSlide 3s linear infinite;
-  }
-  .about-main .main {
-    padding: 100px 0 80px 60%;
+    margin-top: 73px;
   }
 }

@@ -1,146 +1,103 @@
-/* Footer styles */
+/* Pre-footer CTA strip */
 
+.footer-cta {
+  width: 100%;
+  background: linear-gradient(135deg, #f0faf3 0%, #ffffff 48%, #f8f6ef 100%);
+  border-top: 1px solid var(--gt-line, rgba(14, 60, 35, 0.1));
+  border-bottom: 1px solid var(--gt-line, rgba(14, 60, 35, 0.1));
+}
+
+.footer-cta__inner {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+  padding: clamp(2.5rem, 5vw, 3.5rem) 0;
+}
+
+.footer-cta__eyebrow {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gt-green, #1e6b47);
+  margin: 0 0 0.5rem;
+}
+
+.footer-cta__title {
+  font-size: clamp(1.35rem, 2.8vw, 1.75rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--gt-ink, #0c1210);
+  margin: 0 0 0.65rem;
+}
+
+.footer-cta__text {
+  font-size: 0.98rem;
+  line-height: 1.65;
+  color: var(--gt-ink-soft, #3d4a42);
+  margin: 0 0 1.35rem;
+  max-width: 36rem;
+}
+
+.footer-cta__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.75rem 1.35rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  color: #fff !important;
+  background: linear-gradient(135deg, var(--gt-green, #1e6b47) 0%, var(--gt-green-deep, #0f3d28) 100%);
+  border-radius: 999px;
+  box-shadow: 0 12px 32px rgba(15, 61, 40, 0.25);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.footer-cta__btn:hover {
+  color: #fff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 16px 40px rgba(15, 61, 40, 0.32);
+}
+
+.footer-cta__btn-ico,
+.footer-cta__arrow {
+  width: 1.1rem;
+  height: 1.1rem;
+  flex-shrink: 0;
+}
+
+.footer-cta__arrow {
+  transition: transform 0.25s ease;
+}
+
+.footer-cta__btn:hover .footer-cta__arrow {
+  transform: translateX(4px);
+}
+
+.footer-cta__art {
+  display: inline-block;
+  max-width: 320px;
+}
+
+.footer-cta__img {
+  width: 100%;
+  height: auto;
+}
+
+/* Legacy class (backward compat) */
 .footer-contact {
-    width: 100%;
-    background: #FCFEFC;
-    border-top: 2px dotted #26683C;
-    border-bottom: 2px dotted #26683C;
+  width: 100%;
+  background: linear-gradient(135deg, #f0faf3 0%, #ffffff 48%, #f8f6ef 100%);
+  border-top: 1px solid var(--gt-line, rgba(14, 60, 35, 0.1));
+  border-bottom: 1px solid var(--gt-line, rgba(14, 60, 35, 0.1));
 }
 
 .footer-contact .footer-contact-inner {
-    width: 65%;
-    margin: 50px auto;
-    align-items: center;
-}
-
-.footer-contact .footer-contact-inner h3 {
-    font-size: 20px;
-    font-weight: 600;
-    color: #121212;
-    padding-bottom: 3px;
-}
-
-.footer-contact .footer-contact-inner p {
-    font-size: 14px;
-    line-height: 1.5em;
-    color: #121212;
-}
-
-.footer-contact .footer-contact-inner a.contact {
-    width: 40%;
-    font-weight: 500;
-    color: #001F0E;
-    padding: 10px 30px;
-    font-size: 15px !important;
-    position: relative;
-    background-color: transparent;
-    transition: 0.3s ease-in-out;
-    border-radius: 13px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #001F0E;
-}
-
-.footer-contact .footer-contact-inner a.contact span {
-    z-index: 1;
-}
-
-.footer-contact .footer-contact-inner a.contact::before {
-    content: "";
-    width: 0%;
-    height: 100%;
-    position: absolute;
-    background-color: #001F0E;
-    left: 0;
-    top: 0;
-    z-index: -1;
-    transition: 0.3s ease-in-out;
-    border-radius: 13px;
-    color: #fff;
-}
-.footer-contact .footer-contact-inner a.contact:hover {
-    color: #fff;
-}
-.footer-contact .footer-contact-inner a.contact:hover::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 1;
-}
-
-.footer-contact .footer-contact-inner img {
-    width: 65%;
-}
-
-@media (max-width:550px) {
-    .footer .company-name img {
-        width: 25% !important;
-    }
-    .footer-contact .footer-contact-inner {
-        text-align: center;
-    }
-    .footer-contact .footer-contact-inner a.contact {
-        margin-bottom: 30px;
-        margin: 20px auto !important;
-        width: 60%;
-    }
-    .footer-contact .footer-contact-inner img {
-        width: 50%;
-        margin-top: 10px;
-    }
-
-    .link-header {
-        padding-top: 10px;
-    }
-}
-
-@media (min-width:551px) AND (max-width:700px) {
-    .footer-contact .footer-contact-inner {
-        text-align: center;
-    }
-    .footer-contact .footer-contact-inner a.contact {
-        margin-bottom: 30px;
-        margin: 20px auto !important;
-    }
-    .footer-contact .footer-contact-inner img {
-        width: 50%;
-    }
-}
-
-@media (min-width:701px) AND (max-width:999px) {
-    .footer-contact .footer-contact-inner {
-        width: 96% !important;
-        margin: 30px auto;
-    }
-    .footer-contact .footer-contact-inner a.contact {
-        width: 60%;
-    }
-    .link-header {
-        padding-top: 10px;
-    }
-}
-
-
-
-@media (max-width:1000px) {
-    .footer .company-name img {
-        width: 25%;
-    }
-
-    .footer .footer-line {
-        height: 2px;
-        width: 100%;
-        background: #ffffff;
-        opacity: 0.2;
-    }
-    
-}
-
-@media (max-width:1300px) {
-    .footer-contact .footer-contact-inner {
-        width: 80% !important;
-    }
-
+  width: min(1100px, 92%);
+  margin: 0 auto;
+  padding: clamp(2.5rem, 5vw, 3.5rem) 0;
 }

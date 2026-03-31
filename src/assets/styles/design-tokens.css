@@ -1,0 +1,19 @@
+/* Shared design tokens — editorial real estate */
+:root {
+  --gt-ink: #0c1210;
+  --gt-ink-soft: #3d4a42;
+  --gt-green: #1e6b47;
+  --gt-green-deep: #0f3d28;
+  --gt-mint: #8fe3b0;
+  --gt-mint-soft: #d8f5e4;
+  --gt-gold: #c4a035;
+  --gt-surface: #f6f8f6;
+  --gt-surface-2: #eef3ef;
+  --gt-white: #ffffff;
+  --gt-line: rgba(14, 60, 35, 0.12);
+  --gt-shadow: 0 28px 80px rgba(8, 32, 18, 0.12);
+  --gt-shadow-sm: 0 12px 40px rgba(8, 32, 18, 0.08);
+  --gt-radius: 20px;
+  --gt-radius-lg: 28px;
+  --gt-header-h: var(--site-header-h, 88px);
+}

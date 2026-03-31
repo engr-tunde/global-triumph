@@ -1,402 +1,478 @@
-/* Home investments section style */
+/* Investments — holographic tier cards */
 
-.home-investment {
-  height: 840px;
-  padding: 70px 0;
-  background: transparent;
+.invest-landing {
   position: relative;
-  overflow-y: hidden !important;
-}
-.home-investment h3 {
-  text-align: center;
-  padding-bottom: 0px;
-  font-weight: 600;
-  color: #fff;
-  text-shadow: 1.3px 1.2px #000;
-}
-.home-investment p {
-  font-size: 15px;
-  text-align: center;
-  padding-bottom: 60px;
-  font-weight: 600;
-  color: #000;
-  text-shadow: 0.7px 0.8px #fff;
+  padding: clamp(4rem, 10vw, 6.5rem) 0;
+  min-height: auto;
+  overflow: hidden;
+  background: linear-gradient(180deg, #ffffff 0%, #f5f9f7 50%, #fafcfb 100%);
+  color: #0c1a12;
 }
 
-.rotating-bg-outter {
-  padding: auto;
-  margin: 135px auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: absolute;
-  left: 33%;
-  top: 0;
-  width: 34%;
-  animation: rotateFull;
-  animation-duration: 15s;
-  animation-iteration-count: infinite;
-  animation-direction: forwards;
-  z-index: -9999 !important;
-}
-.rotating-bg-inner {
-  padding: auto;
-  margin: 160px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: absolute;
-  left: 33.5%;
-  top: 0;
-  width: 31%;
-  animation: rotateFullBackward;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-direction: forwards;
-  z-index: -9999 !important;
+.invest-landing__container {
+  position: relative;
+  z-index: 2;
 }
 
-.home-investment .left-bx {
+.invest-landing__deco {
   position: absolute;
-  left: 20%;
-  top: 37%;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
 }
-.home-investment .right-bx {
+
+.invest-landing__grid-faint {
   position: absolute;
-  right: 28%;
-  top: 18%;
+  inset: 0;
+  opacity: 0.4;
+  background-image:
+    linear-gradient(rgba(15, 60, 35, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 60, 35, 0.03) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 30%, #000 0%, transparent 70%);
 }
-.home-investment .bottom-bx {
+
+.invest-landing__blob {
   position: absolute;
-  left: 42%;
-  bottom: 11%;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.5;
 }
-.home-investment .center-img {
+
+.invest-landing__blob--a {
+  width: min(55vw, 480px);
+  height: min(55vw, 480px);
+  background: radial-gradient(circle, rgba(120, 200, 150, 0.2) 0%, transparent 70%);
+  top: -12%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.invest-landing__blob--b {
+  width: min(40vw, 360px);
+  height: min(40vw, 360px);
+  background: radial-gradient(circle, rgba(212, 175, 105, 0.12) 0%, transparent 70%);
+  bottom: 0;
+  right: -10%;
+}
+
+.invest-landing__blob--c {
+  width: min(36vw, 300px);
+  height: min(36vw, 300px);
+  background: radial-gradient(circle, rgba(174, 245, 197, 0.1) 0%, transparent 70%);
+  top: 40%;
+  left: -12%;
+}
+
+.invest-landing__header {
+  text-align: center;
+  max-width: 38rem;
+  margin: 0 auto 1.75rem;
+}
+
+.invest-landing__eyebrow {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #1e5c38;
+  margin-bottom: 0.65rem;
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  background: rgba(174, 245, 197, 0.22);
+  border: 1px solid rgba(45, 107, 71, 0.1);
+}
+
+.invest-landing__title {
+  font-size: clamp(1.55rem, 3.4vw, 2.25rem);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  color: #061208;
+  margin-bottom: 0.5rem;
+}
+
+.invest-landing__lead {
+  font-size: clamp(0.92rem, 1.55vw, 1.05rem);
+  line-height: 1.65;
+  color: #4a5f52;
+  margin: 0;
+}
+
+.invest-landing__hero-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 2.5rem;
+  max-width: 300px;
+  padding: 1.5rem;
+}
+
+.invest-landing__hero-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 1px dashed rgba(45, 107, 71, 0.25);
+  animation: investRingSpin 48s linear infinite;
+}
+
+.invest-landing__hero-ring::after {
+  content: '';
+  position: absolute;
+  inset: 12px;
+  border-radius: 50%;
+  border: 1px solid rgba(212, 175, 105, 0.35);
+  box-shadow: 0 0 40px rgba(212, 175, 105, 0.15);
+}
+
+@keyframes investRingSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.invest-landing__hero-img {
+  position: relative;
+  z-index: 1;
+  max-width: 220px;
+  border-radius: 50%;
+  padding: 4px;
+  background: linear-gradient(135deg, rgba(174, 245, 197, 0.8) 0%, rgba(212, 175, 105, 0.5) 50%, rgba(45, 107, 71, 0.6) 100%);
+  box-shadow:
+    0 24px 48px rgba(15, 50, 30, 0.12),
+    0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+}
+
+.invest-landing__hero-img img {
+  display: block;
   width: 100%;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  overflow-y: hidden !important;
-}
-.home-investment .center-img img {
-  width: 36%;
-  margin: 0 auto;
-  animation: homeZoom;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  animation-direction: forwards;
-}
-
-.home-investment .bx {
-  width: 300px;
-  padding: 10px;
-  border-radius: 10px;
+  height: auto;
+  border-radius: 50%;
   background: #fff;
-  box-shadow: 2px 2px 8px #12311d38 !important;
+  animation: investFloat 6s ease-in-out infinite;
 }
-.home-investment .bx-inner {
-  width: 280px;
-  padding: 11px 15px;
-  border: 1px dashed #12121265;
-  border-spacing: 1em;
-  border-radius: 10px;
+
+.invest-landing__hero-wrap--inview .invest-landing__hero-img img {
+  animation:
+    investFloat 6s ease-in-out infinite,
+    investHeroIn 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
-.home-investment .bx-inner .head {
+
+@keyframes investFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes investHeroIn {
+  from {
+    opacity: 0;
+    transform: scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.invest-landing__state {
+  text-align: center;
+  padding: 1rem;
+}
+
+.invest-landing__state img {
+  width: 48px;
+  height: auto;
+}
+
+.invest-landing__state--err {
+  color: #b00020 !important;
+  font-size: 1rem;
+}
+
+.invest-landing__tiers {
+  perspective: 1200px;
+}
+
+.invest-landing__card {
+  height: 100%;
+  padding: 1.5rem 1.35rem 1.5rem;
+  border-radius: 24px;
+  background: linear-gradient(165deg, #ffffff 0%, #fafcfb 100%);
+  border: 1px solid rgba(15, 50, 30, 0.08);
+  box-shadow:
+    0 4px 24px rgba(15, 50, 30, 0.06),
+    0 0 0 1px rgba(255, 255, 255, 0.8) inset;
+  transition:
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+  opacity: 0;
+  transform: translate3d(0, 32px, 0);
+  position: relative;
+  overflow: hidden;
+  transform-style: preserve-3d;
+}
+
+.invest-landing__card-shimmer {
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(
+    130deg,
+    transparent 35%,
+    rgba(255, 255, 255, 0.45) 48%,
+    transparent 62%
+  );
+  transform: translateX(-100%) rotate(8deg);
+  opacity: 0;
+  transform-origin: center;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.invest-landing__card:hover .invest-landing__card-shimmer {
+  animation: investShimmer 0.85s ease-out;
+}
+
+@keyframes investShimmer {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%) rotate(8deg);
+  }
+  40% {
+    opacity: 0.35;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100%) rotate(8deg);
+  }
+}
+
+.invest-landing__card-corner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 72px;
+  height: 72px;
+  background: linear-gradient(135deg, rgba(212, 175, 105, 0.18) 0%, transparent 55%);
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.invest-landing__card-tier {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  margin: 0;
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(6, 18, 8, 0.45);
+  z-index: 1;
+}
+
+.invest-landing__card--silver .invest-landing__card-tier {
+  color: #64748b;
+}
+
+.invest-landing__card--premium .invest-landing__card-tier {
+  color: #1e5c38;
+}
+
+.invest-landing__card--gold .invest-landing__card-tier {
+  color: #a67c00;
+}
+
+.invest-landing__card--silver {
+  border-top: 4px solid rgba(148, 163, 184, 0.9);
+  box-shadow:
+    0 4px 24px rgba(15, 50, 30, 0.06),
+    0 0 0 1px rgba(148, 163, 184, 0.15) inset,
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.invest-landing__card--premium {
+  border-top: 4px solid rgba(45, 107, 71, 0.95);
+  box-shadow:
+    0 4px 24px rgba(15, 50, 30, 0.06),
+    0 0 0 1px rgba(174, 245, 197, 0.2) inset,
+    0 0 60px rgba(45, 107, 71, 0.1);
+}
+
+.invest-landing__card--gold {
+  border-top: 4px solid rgba(212, 168, 75, 0.95);
+  box-shadow:
+    0 4px 24px rgba(15, 50, 30, 0.06),
+    0 0 0 1px rgba(212, 175, 105, 0.2) inset,
+    0 0 60px rgba(212, 175, 105, 0.12);
+}
+
+.invest-landing--inview .invest-landing__card {
+  animation: investCardIn 0.75s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-delay: calc(var(--inv-i, 0) * 0.12s);
+}
+
+@keyframes investCardIn {
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.invest-landing__card:hover {
+  transform: translate3d(0, -12px, 0) rotateX(2deg);
+  border-color: rgba(45, 107, 71, 0.35);
+  box-shadow:
+    0 28px 56px rgba(15, 50, 30, 0.12),
+    0 0 0 1px rgba(174, 245, 197, 0.25);
+}
+
+.invest-landing__card-head {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  font-weight: 600;
-  color: black;
-  margin-bottom: 5px;
+  gap: 0.75rem;
+  margin: 1.25rem 0 1rem;
 }
-.home-investment .bx-inner img {
-  width: 30%;
-  padding-right: 10px;
+
+.invest-landing__card-ico-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(15, 50, 30, 0.08);
+  background: linear-gradient(145deg, #f6fbf8 0%, #eef6f0 100%);
+  flex-shrink: 0;
 }
-.home-investment .bx-inner .price {
-  color: #000;
-  padding-bottom: 20px;
-  font-weight: 500;
+
+.invest-landing__card--silver .invest-landing__card-ico-wrap {
+  background: linear-gradient(145deg, #f1f5f9 0%, #e2e8f0 100%);
+}
+
+.invest-landing__card--gold .invest-landing__card-ico-wrap {
+  background: linear-gradient(145deg, #fffbeb 0%, #fef3c7 100%);
+  border-color: rgba(212, 175, 105, 0.35);
+}
+
+.invest-landing__card-ico {
+  width: 44px;
+  height: auto;
+}
+
+.invest-landing__card-name {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #061208;
   margin: 0;
+  line-height: 1.25;
+  text-transform: capitalize;
 }
-.home-investment .bx-inner .content {
+
+.invest-landing__card-range-block {
+  margin-bottom: 1rem;
+  padding: 0.85rem 1rem;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(174, 245, 197, 0.15) 0%, rgba(255, 255, 255, 0.6) 100%);
+  border: 1px solid rgba(45, 107, 71, 0.1);
+}
+
+.invest-landing__card--silver .invest-landing__card-range-block {
+  background: linear-gradient(135deg, rgba(148, 163, 184, 0.12) 0%, rgba(255, 255, 255, 0.6) 100%);
+}
+
+.invest-landing__card--gold .invest-landing__card-range-block {
+  background: linear-gradient(135deg, rgba(253, 230, 138, 0.2) 0%, rgba(255, 255, 255, 0.6) 100%);
+}
+
+.invest-landing__card-range-label {
+  display: block;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #64748b;
+  margin-bottom: 0.35rem;
+}
+
+.invest-landing__card-range {
+  font-size: 0.98rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #0d2818;
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+}
+
+.invest-landing__card-roi {
+  margin-bottom: 0.85rem;
+  padding: 1rem 1.1rem;
+  border-radius: 16px;
+  text-align: center;
+  background: linear-gradient(135deg, #0d2818 0%, #1a4030 100%);
+  border: 1px solid rgba(212, 175, 105, 0.35);
+  box-shadow: 0 12px 36px rgba(0, 30, 18, 0.25);
+}
+
+.invest-landing__card-roi-label {
+  display: block;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(232, 245, 236, 0.72);
+  margin-bottom: 0.35rem;
+}
+
+.invest-landing__card-roi-value {
+  font-size: clamp(1.35rem, 3.5vw, 1.75rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 0;
+  line-height: 1.15;
+  background: linear-gradient(105deg, #ffffff 0%, #c8efd9 45%, #d4af6a 78%, #fff 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 12px rgba(0, 0, 0, 0.35));
+}
+
+.invest-landing__card-desc {
+  font-size: 0.82rem;
+  line-height: 1.55;
+  color: #5a6f62;
+  margin: 0;
   text-align: left;
-  color: #000;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 1.4em;
-  padding: 0;
-  margin: 0;
 }
 
-@media (max-width: 500px) {
-  .home-investment {
-    height: 690px;
-    padding: 60px 0;
-    box-sizing: border-box !important;
-    overflow-x: hidden !important;
+@media (prefers-reduced-motion: reduce) {
+  .invest-landing__hero-img img {
+    animation: none;
   }
 
-  .rotating-bg-outter {
-    padding: auto;
-    margin: 170px auto;
-    left: 3%;
-    top: 0;
-    width: 89%;
-  }
-  .rotating-bg-inner {
-    padding: auto;
-    margin: 180px auto;
-    left: 6%;
-    top: 0;
-    width: 83%;
-  }
-  .home-investment h3 {
-    font-size: 20px;
-  }
-  .home-investment p {
-    font-size: 14px;
-  }
-  .home-investment .left-bx {
-    position: absolute;
-    left: 3%;
-    top: 50%;
-  }
-  .home-investment .right-bx {
-    position: absolute;
-    left: 30%;
-    top: 18%;
-  }
-  .home-investment .bottom-bx {
-    position: absolute;
-    left: 30%;
-    bottom: 6%;
-  }
-  .home-investment .center-img {
-    width: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 55px;
-  }
-  .home-investment .center-img img {
-    width: 50%;
-  }
-  .home-investment .bx {
-    width: 60%;
-    padding: 8px;
-  }
-  .home-investment .bx-inner {
-    width: 100%;
-    padding: 11px 6px;
-  }
-  .home-investment .bx-inner .head {
-    font-size: 13px;
-    margin-bottom: 0;
-    text-align: center;
-  }
-  .home-investment .bx-inner img {
-    width: 25%;
-  }
-  .home-investment .bx-inner .price {
-    font-size: 13px;
-    padding-bottom: 10px;
-    margin: 0;
-  }
-  .home-investment .bx-inner .content {
-    font-size: 13px;
-  }
-}
-
-@media (min-width: 501px) AND (max-width: 991px) {
-  .home-investment {
-    height: 690px;
-    padding: 60px 0;
-    box-sizing: border-box !important;
+  .invest-landing__hero-ring {
+    animation: none;
   }
 
-  .rotating-bg-outter {
-    padding: auto;
-    margin: 130px auto;
-    left: 3%;
-    top: 0;
-    width: 89%;
-  }
-  .rotating-bg-inner {
-    padding: auto;
-    margin: 150px auto;
-    left: 6%;
-    top: 0;
-    width: 83%;
-  }
-  .home-investment h3 {
-    font-size: 20px;
-  }
-  .home-investment p {
-    font-size: 14px;
-  }
-  .home-investment .left-bx {
-    position: absolute;
-    left: 3%;
-    top: 50%;
-  }
-  .home-investment .right-bx {
-    position: absolute;
-    left: 30%;
-    top: 18%;
-  }
-  .home-investment .bottom-bx {
-    position: absolute;
-    left: 30%;
-    bottom: 6%;
-  }
-  .home-investment .center-img {
-    width: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 55px;
-  }
-  .home-investment .center-img img {
-    width: 50%;
-  }
-  .home-investment .bx {
-    width: 60%;
-    padding: 8px;
-  }
-  .home-investment .bx-inner {
-    width: 100%;
-    padding: 11px 6px;
-  }
-  .home-investment .bx-inner .head {
-    font-size: 13px;
-    margin-bottom: 0;
-    text-align: center;
-  }
-  .home-investment .bx-inner img {
-    width: 25%;
-  }
-  .home-investment .bx-inner .price {
-    font-size: 13px;
-    padding-bottom: 10px;
-    margin: 0;
-  }
-  .home-investment .bx-inner .content {
-    font-size: 13px;
-  }
-}
-
-@media (min-width: 992px) AND (max-width: 1199px) {
-  .home-investment {
-    height: 750px;
-    padding: 70px 0;
-  }
-  .home-investment h3 {
-    font-size: 22px;
-  }
-  .home-investment p {
-    font-size: 14px;
+  .invest-landing__card {
+    opacity: 1;
+    transform: none;
+    animation: none !important;
   }
 
-  .rotating-bg-outter {
-    padding: auto;
-    margin: 135px auto;
-    left: 25%;
-    top: 0;
-    width: 50%;
-  }
-  .rotating-bg-inner {
-    padding: auto;
-    margin: 155px 20px;
-    left: 25%;
-    top: 0;
-    width: 46%;
+  .invest-landing__card:hover {
+    transform: none;
   }
 
-  .home-investment .left-bx {
-    position: absolute;
-    left: 6%;
-    top: 39%;
-  }
-  .home-investment .right-bx {
-    position: absolute;
-    right: 11%;
-    top: 18%;
-  }
-  .home-investment .bottom-bx {
-    position: absolute;
-    left: 42%;
-    bottom: 10%;
-  }
-  .home-investment .center-img {
-    margin-top: 55px;
-  }
-  .home-investment .center-img img {
-    width: 36%;
-    margin: 0 auto;
-  }
-  .home-investment .bx-inner .head {
-    font-size: 14px;
-  }
-  .home-investment .bx-inner .price {
-    font-size: 13px;
-  }
-}
-
-@media (min-width: 1200px) AND (max-width: 1400px) {
-  .home-investment {
-    height: 800px;
-    padding: 60px 0;
-  }
-
-  .rotating-bg-outter {
-    padding: auto;
-    margin: 135px auto;
-    left: 25%;
-    top: 0;
-    width: 45%;
-  }
-  .rotating-bg-inner {
-    padding: auto;
-    margin: 155px 20px;
-    left: 25%;
-    top: 0;
-    width: 42%;
-  }
-
-  .home-investment .left-bx {
-    position: absolute;
-    left: 8%;
-    top: 39%;
-  }
-  .home-investment .right-bx {
-    position: absolute;
-    right: 10%;
-    top: 18%;
-  }
-  .home-investment .bottom-bx {
-    position: absolute;
-    left: 42%;
-    bottom: 10%;
-  }
-  .home-investment .center-img {
-    margin-top: 55px;
-  }
-  .home-investment .center-img img {
-    width: 36%;
-    margin: 0 auto;
-  }
-  .home-investment .bx-inner .head {
-    font-size: 14px;
-  }
-  .home-investment .bx-inner .price {
-    font-size: 13px;
+  .invest-landing__card:hover .invest-landing__card-shimmer {
+    animation: none;
   }
 }

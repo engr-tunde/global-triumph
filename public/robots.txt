@@ -1,3 +1,8 @@
-# https://www.robotstxt.org/robotstxt.html
+# https://www.robotstxt.org/
 User-agent: *
-Disallow:
+Allow: /
+
+# Admin UI — do not crawl
+Disallow: /gtmpm-admin
+
+Sitemap: https://globaltriumph.ng/sitemap.xml

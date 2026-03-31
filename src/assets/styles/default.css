@@ -15,25 +15,49 @@
   font-weight: 400;
 }
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
+/*
+  Never put overflow-x on the universal selector. Per CSS overflow rules, when one
+  axis is non-visible, the other can compute to `auto`, which creates spurious
+  scrollbars on headings, spans, and other text (especially with webkit gradient text).
+  Clip horizontal overflow only at the viewport/root.
+*/
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
+  overflow-x: clip;
+  overflow-y: auto;
 }
 
 body {
   font-weight: 400;
-  overflow-x: hidden !important;
   position: relative;
   background-color: #fff !important;
   color: #ffffff !important;
   font-family: 'Raleway', sans-serif !important;
+  overflow-x: clip;
+  overflow-y: auto;
+  max-width: 100%;
+}
+
+#root {
+  overflow-x: clip;
+  max-width: 100%;
+}
+
+@supports not (overflow: clip) {
+  html,
+  body,
+  #root {
+    overflow-x: hidden;
+  }
 }
 
 ::-webkit-scrollbar {
@@ -101,6 +125,7 @@ h6 {
   margin: 0;
   padding: 0;
   line-height: normal;
+  overflow: visible;
 }
 
 p,
@@ -112,6 +137,7 @@ ul {
   padding: 0;
   line-height: normal;
   text-decoration: none;
+  overflow: visible;
 }
 
 a {

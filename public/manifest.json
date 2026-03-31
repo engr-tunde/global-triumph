@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Global Triumph",
+  "name": "Global Triumph Market Plus Multiconcept",
+  "description": "Real estate, investments, and mobility services in Nigeria.",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,18 +9,15 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "favicon.png",
       "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "192x192",
+      "purpose": "any maskable"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#1e6b47",
+  "background_color": "#f6f8f6",
+  "lang": "en-NG"
 }

@@ -1,214 +1,177 @@
-.investments-body{
-    margin: 0 0 0 0;
-    padding: 80px 0;
-    background-image: url('../../img/brick.jpg');
-    position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-}
-.investments-body .inner {
-    width: 80%;
-    margin: 0 auto;
-}
-.investments-body .inner h2 {
-    font-size: 25px;
-    font-weight: 600;
-    text-align: center;
-    color: #fff;
-    padding-bottom: 20px;
-}
-.investments-body .text {
-    border-radius: 15px;
-    padding: 15px;
-    margin-bottom: 40px;
-    box-shadow: 1px 5px 12px 5px #000c02 !important;
-    text-align: center;
-    border-radius: 20px;
-    animation: signupFormContainer 5s 5s forwards infinite;
-}
-.investments-body .text .content {
-    background: #FDF4E1;
-    padding: 0px 25px 20px 25px;
-    border-radius: 0px 0px 20px 20px;
-}
-.investments-body .text .upperBG {
-    border-radius: 20px 20px 0px 0px;
-    background-image: url('../../img/investment-bg.webp');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 150px;
-    width: 100%;
-}
-.investments-body .text .icon {
-    background: #BBD51A;
-    border-radius: 50%;
-    box-shadow: 1px 5px 6px 4px #001f0e9f !important;
-    margin-top: -20%;
-    margin-bottom: 0 !important;
-    padding: 0 !important;
-    z-index: 999999 !important;
-}
-.investments-body .text h3 {
-    font-size: 15px;
-    font-weight: 600;
-    color: #3b2201c4;
-    margin: 0;
-    padding-top: 10px;
-    padding-bottom: 20px;
-}
-.investments-body .text .content .investment-details {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-.investments-body .text .content .investment-details .price {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-.investments-body .text .content .investment-details .min {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-.investments-body .text .content .investment-details .max {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-.investments-body .text .content .investment-details .roi {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-.investments-body .text .content .investment-details p {
-    color: #3b2201c4;
-    font-size: 13px;
-    font-weight: 600;
-    padding: 0 !important;
-    margin: 0 !important;
-}
-.investments-body .text .content .investment-details span {
-    color: #3b2201c4;
-    font-size: 12px;
-    font-weight: 500;
-    padding: 0;
-    margin: 0;
-}
-.investments-body .text .content .investment-details a {
-    background: #00BFA6;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 500;
-    padding: 9px 20px;
-    border-radius: 10px;
-    margin-top: 10px;
-    width: 100%;
-    box-shadow: 1px 3px 6px 2px #000c02b6 !important;
-}
-.investments-body .text .content .investment-details a:hover {
-    background: #BBD51A;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 500;
-    padding: 9px 20px;
-    border-radius: 10px;
-    margin-top: 10px;
-    width: 100%;
+/* Investment categories grid */
+
+.inv-catalog {
+  padding: clamp(2.5rem, 5vw, 4rem) 0 clamp(3rem, 6vw, 5rem);
+  background: linear-gradient(180deg, var(--gt-surface) 0%, #ffffff 40%, var(--gt-surface) 100%);
 }
 
-.investments-body .right-img {
-    margin: 0px auto;
-    padding: 0;
-    width: 100%;
-}
-.investments-body .right-img img {
-    width: 40%;
-    margin: 0px auto !important;
-}
-.investments-body .right-img img:hover {
-    transform: rotate(10deg);
-    transition: 1s ease-in-out;
+.inv-catalog__title {
+  font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: var(--gt-ink);
+  margin: 0 0 0.5rem;
 }
 
-
-
-@media (max-width:500px) {
-    .investments-body{
-        padding: 70px 0;
-    }
-    .investments-body .inner {
-        width: 95%;
-        margin: 0 auto;
-    }
-    .investments-body .inner h2 {
-        font-size: 20px;
-    }
-    .investments-body .text {
-        width: 100%;
-        margin: 15px auto !important;
-        padding: 15px;
-    }
-    .investments-body .text h3 {
-        font-size: 16px;
-    }
-    .investments-body .right-img img {
-        width: 80%;
-        margin: auto;
-    }
-    .bt {
-        margin-top: 0px !important;
-    }
+.inv-catalog__subtitle {
+  text-align: center;
+  font-size: 0.98rem;
+  color: var(--gt-ink-soft);
+  max-width: 520px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
 }
 
-@media (min-width:501px) AND (max-width:991px) {
-    .investments-body{
-        padding: 70px 0;
-    }
-    .investments-body .inner {
-        width: 90%;
-    }
-    .investments-body .inner h2 {
-        font-size: 19px;
-    }
-    .investments-body .text {
-        width: 100%;
-        margin: 15px auto;
-        padding: 20px 30px;
-    }
-    .investments-body .text h3 {
-        font-size: 16px;
-    }
-    .investments-body .right-img img {
-        width: 70%;
-        margin: auto;
-    }
+.inv-catalog__grid {
+  margin-bottom: 0.5rem;
 }
 
-@media (min-width:992px) AND (max-width:1199px) {
-    .investments-body{
-        padding: 70px 0;
-    }
-    .investments-body .inner {
-        width: 93%;
-        margin: 0 auto;
-    }
-    .investments-body .text {
-        width: 100%;
-        padding: 15px;
-    
-    }
-    .investments-body .text h3 {
-        font-size: 16px;
-    }
-    .investments-body .right-img img {
-        width: 60%;
-        margin: auto;
-    }
+.inv-card {
+  height: 100%;
+  background: var(--gt-white);
+  border-radius: var(--gt-radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--gt-line);
+  box-shadow: var(--gt-shadow-sm);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.inv-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--gt-shadow);
+}
+
+.inv-card__visual {
+  height: 148px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: var(--gt-radius-lg) var(--gt-radius-lg) 0 0;
+}
+
+.inv-card__body {
+  position: relative;
+  padding: 0 1.35rem 1.5rem;
+  margin-top: -2rem;
+}
+
+.inv-card__icon-wrap {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background: linear-gradient(145deg, #e8f8ee 0%, #c8efd9 100%);
+  border: 1px solid var(--gt-line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.85rem;
+  box-shadow: var(--gt-shadow-sm);
+}
+
+.inv-card__icon {
+  width: 28px;
+  height: 28px;
+  color: var(--gt-green-deep);
+}
+
+.inv-card__name {
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--gt-ink);
+  margin: 0 0 1rem;
+}
+
+.inv-card__stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+  margin-bottom: 1.15rem;
+}
+
+.inv-card__stat--full {
+  grid-column: 1 / -1;
+}
+
+.inv-card__stat-label {
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gt-ink-soft);
+  margin-bottom: 0.2rem;
+}
+
+.inv-card__stat-value {
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--gt-ink);
+  margin: 0;
+}
+
+.inv-card__roi {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--gt-green);
+  margin: 0;
+}
+
+.inv-card__cta {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  color: #fff !important;
+  background: linear-gradient(135deg, var(--gt-green) 0%, var(--gt-green-deep) 100%);
+  border-radius: 12px;
+  box-shadow: 0 10px 28px rgba(15, 61, 40, 0.25);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.inv-card__cta:hover {
+  color: #fff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 36px rgba(15, 61, 40, 0.32);
+}
+
+.inv-catalog__finale {
+  margin-top: clamp(2.5rem, 5vw, 3.5rem);
+  height: 1px;
+  max-width: min(520px, 100%);
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(30, 107, 71, 0.35) 20%,
+    rgba(212, 175, 105, 0.45) 50%,
+    rgba(30, 107, 71, 0.35) 80%,
+    transparent 100%
+  );
+  border: none;
+}
+
+.inv-catalog__state {
+  text-align: center;
+  padding: 1rem;
+}
+
+.inv-catalog__state--err {
+  color: #b42318;
+}
+
+/* Legacy .investments-body hooks */
+.investments-body {
+  background: transparent;
 }
